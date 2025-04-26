@@ -32,6 +32,7 @@ public class HelloController implements Initializable {
     // La directive @Override en Java est utilisée pour indiquer que vous êtes en train de redéfinir (ou "écraser")
     // une méthode qui existe déjà dans une classe parente
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

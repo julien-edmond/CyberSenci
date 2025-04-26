@@ -1,6 +1,10 @@
 module sio.d3.javafx.cybersensi {
     requires javafx.controls;
     requires javafx.fxml;
+    //Gestion de la BDD
+    requires java.persistence;
+    requires java.sql;
+    requires org.hibernate.orm.core;
 
 
     opens sio.d3.javafx.cybersensi to javafx.fxml;

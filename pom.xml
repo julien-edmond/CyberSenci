@@ -38,7 +38,35 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!--- GESTION BDD-->
+        <!-- JPA -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <!-- Hibernate (implémentation de JPA) -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.30.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.4.30.Final</version>
+        </dependency>
+        <!-- Dépendance pour le connecteur MariaDB -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+
+        <!-- FIN GESTION BDD -->
     </dependencies>
+
+
 
     <build>
         <plugins>
