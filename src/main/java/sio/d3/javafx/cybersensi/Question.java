@@ -6,7 +6,7 @@ import java.util.List;
 public class Question {
     private String ennonce;
     private String bonne_reponse;
-    private List<String> propositions;
+    public List<String> propositions;
 
     public Question(String ennonce, String bonne_reponse){
         this.ennonce = ennonce;
@@ -14,8 +14,15 @@ public class Question {
         this.propositions = new ArrayList<>();
     }
 
+    public void effacer(int i)
+    {
+        this.propositions.remove(i);
+    }
+
     public void ajouterProposition(String proposition){
         this.propositions.add(proposition);
+        System.out.println(this.propositions);
+
     }
     public String toString(){
         return this.ennonce+"-"+ this.bonne_reponse+"-"+this.propositions;
